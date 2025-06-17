@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -121,15 +122,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+import os
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 STATIC_URL = '/static/'
 
-# Collect static files into sahil/static/
-STATIC_ROOT = os.path.join(BASE_DIR, 'sahil', 'staticfiles')
+# Only needed if you also have global static files (not required if all static is inside apps)
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-# If you have static inside apps like sahil/static/, include this
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'sahil', 'static'),
-]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
