@@ -1,0 +1,467 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - SAHIL S Z</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">SAHIL S Z</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#internship">Internship</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certification">Certification</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Me Section -->
+<section id="about" class="section bg-light-custom">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                <!-- Profile Photo -->
+                <img src="{% static 'images/sahil.jpg' %}" alt="SAHIL S Z" class="profile-img rounded-circle mb-3">
+
+                <!-- Location -->
+                <p class="mb-3">
+                    <i class="fas fa-map-marker-alt me-2"></i> Tirupattur, India
+                </p>
+
+                <!-- Social Links -->
+                <div class="mb-5">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/sahil-sz-0b2910357" class="social-icon" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/9500556699" class="social-icon" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/sahil_sz_2315" class="social-icon" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/sahil_sz_23" class="social-icon" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    
+                    <!--mail-->
+                    <a href="mailto:sahilsn2005@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                    <!-- Resume Download Button -->
+                    <a href="{% static 'files/resume.pdf' %}" class="btn btn-primary mt-2" 7ownload>
+                        <i class="fas fa-download me-2"></i>Download Resume
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <h1 class="display-4 mb-4">Hi, I'm <span class="text-primary">SAHIL S Z</span></h1>
+
+                <!-- Professional Title -->
+                <h3 class="mb-4">Fullstack Developer ,Software Developer ,Web Developer</h3>
+
+                <!-- Short Bio -->
+                <p class="lead mb-4">
+                 "I'm a passionate web developer with creating responsive and user-friendly websites."
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skills/Expertise Section -->
+<section id="skills" class="section bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">My Skills & Expertise</h2>
+        <div class="row">
+
+            <!-- C Language -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-c text-primary mb-3" style="font-size: 2.5rem;"></i>
+                        <h4 class="card-title">C Language</h4>
+                        <p class="card-text">Foundational programming skills in C</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C++ -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-code text-primary mb-3" style="font-size: 2.5rem;"></i>
+                        <h4 class="card-title">C++</h4>
+                        <p class="card-text">Object-Oriented Programming with C++</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fab fa-python text-primary mb-3" style="font-size: 2.5rem;"></i>
+                        <h4 class="card-title">Python & Django</h4>
+                        <p class="card-text">Backend development using Python and Django</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HTML & CSS -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fab fa-html5 text-danger mb-2" style="font-size: 2.5rem;"></i>
+                        <i class="fab fa-css3-alt text-primary mb-3" style="font-size: 2.5rem;"></i>
+                        <h4 class="card-title">HTML & CSS</h4>
+                        <p class="card-text">Building responsive and styled web pages</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fab fa-bootstrap text-purple mb-3" style="font-size: 2.5rem;"></i>
+                        <h4 class="card-title">Bootstrap</h4>
+                        <p class="card-text">Responsive UI with Bootstrap 5</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MySQL -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-database text-secondary mb-3" style="font-size: 2.5rem;"></i>
+                        <h4 class="card-title">MySQL</h4>
+                        <p class="card-text">Database design and SQL queries</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Visualization -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-chart-bar text-success mb-3" style="font-size: 2.5rem;"></i>
+                        <h4 class="card-title">Data Visualization</h4>
+                        <p class="card-text">Matplotlib for charts and analysis</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-users-cog text-info mb-3" style="font-size: 2.5rem;"></i>
+                        <h4 class="card-title">Soft Skills</h4>
+                        <p class="card-text">Teamwork, communication, time management</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Projects & Work Samples Section -->
+<section id="projects" class="section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-5">Projects & Work Samples</h2>
+        <div class="row">
+
+            <!-- Project 1: Apartment Security System -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title"><i class="fas fa-shield-alt text-primary me-2"></i> Apartment Security System</h4>
+                        <p class="card-text">
+                            A web-based application built to enhance residential security by managing visitor logs, capturing images, and sending real-time alerts.
+                        </p>
+                        <span class="badge bg-secondary">Python</span>
+                        <span class="badge bg-secondary">Django</span>
+                        <span class="badge bg-secondary">MySQL</span>
+                        <span class="badge bg-secondary">HTML</span>
+                        <span class="badge bg-secondary">CSS</span>
+                        <span class="badge bg-secondary">Bootstrap</span>
+                        <span class="badge bg-secondary">JS</span>
+                        <br><br>
+                        <a href="https://inspect-ch3p.onrender.com" target="_blank" class="btn btn-outline-primary btn-sm">
+                            <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: E-commerce Website -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title"><i class="fas fa-shopping-cart text-success me-2"></i> E-commerce Website</h4>
+                        <p class="card-text">
+                            A fully functional online store designed to sell beverages with cart, checkout, and responsive UI. Deployed using Render.
+                        </p>
+                        <span class="badge bg-secondary">HTML</span>
+                        <span class="badge bg-secondary">CSS</span>
+                        <span class="badge bg-secondary">Python</span>
+                        <span class="badge bg-secondary">Django</span>
+                        <span class="badge bg-secondary">Bootstrap</span>
+                        <span class="badge bg-secondary">JS</span>
+                        <br><br>
+                        <a href="https://khilla-mojitos-2.onrender.com" target="_blank" class="btn btn-outline-primary btn-sm">
+                            <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Internship Section -->
+<section id="internship" class="section bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Internship Experience</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <i class="fas fa-briefcase text-primary me-2"></i> Intern - CSC Computer Centre
+                        </h4>
+                        <h6 class="text-muted">Duration: 15 Days</h6>
+                        <p class="mt-3">
+                            Gained hands-on experience in:
+                        </p>
+                        <ul>
+                            <li>Python programming for practical applications</li>
+                            <li>Data visualization using <strong>Matplotlib</strong></li>
+                            <li>Basic database connectivity and interaction</li>
+                        </ul>
+                        <p>
+                            This internship helped me strengthen my foundational coding and real-world problem-solving skills.
+                        </p>
+
+                        <!-- View Certificate Button -->
+                        <a href="{% static 'images/internship.jpg' %}" target="_blank" class="btn btn-outline-success mt-3">
+                            <i class="fas fa-eye me-2"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Certifications Section -->
+<section id="certification" class="section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-5">Certifications</h2>
+        <div class="row">
+
+            <!-- Certification 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h4 class="card-title"><i class="fas fa-certificate text-warning me-2"></i> Python Advanced Programming</h4>
+                        <p class="card-text">Certified by TCDS Computer Education</p>
+                        <a href="{% static 'images/python.jpg' %}" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                            <i class="fas fa-eye me-1"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h4 class="card-title"><i class="fas fa-certificate text-warning me-2"></i> Python with Django</h4>
+                        <p class="card-text">Certified by Udemy</p>
+                        <a href="{% static 'images/python with django.jpg' %}" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                            <i class="fas fa-eye me-1"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Education</h2>
+        <div class="row">
+
+            <!-- College: Don Bosco -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <div class="d-flex align-items-center">
+                        <img src="{% static 'images/don.jpg' %}" alt="Don Bosco Logo" style="width: 60px; height: 60px;" class="me-3">
+                        <div>
+                            <h5 class="mb-1">Don Bosco College, Dharmapuri</h5>
+                            <p class="mb-0"><strong>Degree:</strong> Bachelor of Computer Applications (BCA)</p>
+                            <p class="mb-0"><strong>Roll No:</strong> C22UG155CAP058</p>
+                            <p class="mb-0"><strong>Year:</strong> 2022 – 2025</p>
+                            <p class="mb-0"><strong>Score:</strong> 8.3 CGPA (current)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- School: YMCA HSC -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <div class="d-flex align-items-center">
+                        <img src="{% static 'images/ymca.jpeg' %}" alt="YMCA Logo" style="width: 60px; height: 60px;" class="me-3">
+                        <div>
+                            <h5 class="mb-1">YMCA Brown Memorial Hr. Sec. School</h5>
+                            <p class="mb-0"><strong>Class:</strong> Higher Secondary Certificate (HSC)</p>
+                            <p class="mb-0"><strong>Roll No:</strong>2111649020 </p>
+                            <p class="mb-0"><strong>Year:</strong> 2020 – 2022</p>
+                            <p class="mb-0"><strong>Score:</strong> 60%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- School: YMCA HSC -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <div class="d-flex align-items-center">
+                        <img src="{% static 'images/ymca.jpeg' %}" alt="YMCA Logo" style="width: 60px; height: 60px;" class="me-3">
+                        <div>
+                            <h5 class="mb-1">YMCA Brown Memorial Hr. Sec. School</h5>
+                            <p class="mb-0"><strong>Class:</strong> SSLC</p>
+                            <p class="mb-0"><strong>Roll No:</strong> 4733402</p>
+                            <p class="mb-0"><strong>Year:</strong> 2019 – 2020</p>
+                            <p class="mb-0"><strong>Score:</strong> 90%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog / Publication Section -->
+<section id="blog" class="section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-5">Blog & Publications</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow-sm p-4">
+                    <div class="row align-items-center">
+                        <!-- Book Information -->
+                        <div class="col-md-6">
+                            <h4><i class="fas fa-book-open text-primary me-2"></i> Ocean of Wonders</h4>
+                            <p><strong>Role:</strong> Co-Author</p>
+                            <p><strong>Compiler:</strong> Neha Anjum</p>
+                            <p>
+                                Contributed original writing as a co-author in the book <strong>Ocean of Wonders</strong>,
+                                a creative compilation of young voices and reflections.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate Button -->
+                    <div class="text-center mt-4">
+                        <a href="{% static 'images/ocean-certificate.jpg' %}" target="_blank" class="btn btn-outline-success">
+                            <i class="fas fa-eye me-2"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="section bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+        <div class="row justify-content-center">
+            <!-- Contact Details -->
+            <div class="col-md-6">
+                <div class="card shadow-sm p-4 text-center">
+                    <p class="mb-3">
+                        <i class="fas fa-phone me-2 text-primary"></i>
+                        <strong>Phone:</strong> +91 95005 56699
+                    </p>
+                    <p class="mb-3">
+                        <i class="fas fa-envelope me-2 text-primary"></i>
+                        <strong>Email:</strong> <a href="mailto:sahilsn2005@gmail.com">sahilsn2005@gmail.com</a>
+                    </p>
+                    <p class="mb-3">
+                        <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                        <strong>Location:</strong> Tirupattur, Tamil Nadu, India
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 80;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
