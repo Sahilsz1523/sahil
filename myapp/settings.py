@@ -118,8 +118,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Collect static files into sahil/static/
+STATIC_ROOT = os.path.join(BASE_DIR, 'sahil', 'staticfiles')
+
+# If you have static inside apps like sahil/static/, include this
 STATICFILES_DIRS = [
-    BASE_DIR / 'myapp' / 'static',  # If you're putting static inside your app folder
+    os.path.join(BASE_DIR, 'sahil', 'static'),
 ]
 
 # Default primary key field type
