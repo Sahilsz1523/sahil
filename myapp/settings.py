@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-3z=i!465)8t9rwm*bc-w-7)f)l)^***_2(3v^yx$qm^-*%zr3#
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'khilla-mojitos-2.onrender.com',
+    'sahil-q520.onrender.com',
     'localhost',
     '127.0.0.1',
 ]
